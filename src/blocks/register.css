@@ -1,0 +1,117 @@
+.register {
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin: 0 auto;
+  font-family: "Inter", Arial, sans-serif;
+  align-items: center;
+  padding-bottom: 4%;
+  display: flex;
+  color: white;
+  max-width: 880px;
+}
+.register__header-wrapper {
+  margin-top: 20px;
+  padding-bottom: 0;
+}
+
+.register__header-login {
+  font-family: Inter;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  right: 200px;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.register__form-input:first-of-type {
+  margin-bottom: 30px;
+}
+
+.register__form-input {
+  margin-top: 15px;
+  padding-bottom: 7px;
+  background-color: black;
+  font-size: 14px;
+  color: white;
+  border: none;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  width: 358px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.register__form-input:focus {
+  outline: none;
+}
+
+.register__button {
+  margin-top: 150px;
+  width: 100%;
+  padding: 10px 0 10px 0;
+  margin-bottom: 15px;
+  width: 358px;
+  height: 50px;
+  cursor: pointer;
+}
+.form__error_password {
+  position: relative;
+  bottom: -3px;
+  left: 190px;
+  height: 2px;
+  width: 90%;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.form__error_email {
+  position: relative;
+  bottom: -3px;
+  left: 190px;
+  height: 2px;
+  width: 90%;
+  font-size: 12px;
+}
+.register__login {
+  margin: 0;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.register__title {
+  margin: 40px 0 40px 0;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 880px) {
+  .reister__header {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .register__header {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .register__header {
+    width: 318px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .register__form-input,
+  .register__button {
+    width: 260px;
+  }
+}
