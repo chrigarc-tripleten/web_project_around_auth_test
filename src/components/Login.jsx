@@ -43,27 +43,29 @@ export default function Login({ onLogin }) {
         </div>
         <h2 className="login__title">Inicia Sesión</h2>
         <form className="login__form" onSubmit={handleSubmit} ref={formRef}>
-          <input
-            className="login__form-input "
-            name="email"
-            type="email"
-            id="email"
-            placeholder="Correo electrónico"
-            required={true}
-          />
-          <span className="form__error_email form__error"></span>
-          <input
-            className="login__form-input"
-            name="password"
-            type="password"
-            id="password"
-            placeholder="Contraseña"
-            required={true}
-          />
-          <span className="form__error_password form__error"></span>
-          <button type="submit" className="login__button ">
-            Inicia Sesión
-          </button>
+          <fieldset className="login__form-fieldset">
+            <input
+              className="login__form-input "
+              name="email"
+              type="email"
+              id="email"
+              placeholder="Correo electrónico"
+              required={true}
+            />
+            <span className="form__error_email form__error"></span>
+            <input
+              className="login__form-input"
+              name="password"
+              type="password"
+              id="password"
+              placeholder="Contraseña"
+              required={true}
+            />
+            <span className="form__error_password form__error"></span>
+            <button type="submit" className="login__button ">
+              Inicia Sesión
+            </button>
+          </fieldset>
         </form>
         <Link className="login__register" to="/register">
           ¿Aún no eres miembro? Regístrate aquí

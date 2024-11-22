@@ -42,27 +42,29 @@ export default function Register({ onRegister }) {
         </div>
         <h2 className="register__title">Regístrate</h2>
         <form className="register__form " onSubmit={handleSubmit} ref={formRef}>
-          <input
-            className="register__form-input"
-            name="email"
-            type="email"
-            id="email"
-            placeholder="Correo electrónico"
-            required={true}
-          />
-          <span className="form__error_email form__error"></span>
-          <input
-            className="register__form-input"
-            name="password"
-            type="password"
-            id="password"
-            placeholder="Contraseña"
-            required={true}
-          />
-          <span className="form__error_password form__error"></span>
-          <button type="submit" className="register__button">
-            Regístrate
-          </button>
+          <fieldset className="register__form-fieldset">
+            <input
+              className="register__form-input"
+              name="email"
+              type="email"
+              id="email"
+              placeholder="Correo electrónico"
+              required={true}
+            />
+            <span className="form__error_email form__error"></span>
+            <input
+              className="register__form-input"
+              name="password"
+              type="password"
+              id="password"
+              placeholder="Contraseña"
+              required={true}
+            />
+            <span className="form__error_password form__error"></span>
+            <button type="submit" className="register__button">
+              Regístrate
+            </button>
+          </fieldset>
         </form>
         <Link className="register__login" to="/login">
           ¿Ya eres miembro? Inicia sesión aquí

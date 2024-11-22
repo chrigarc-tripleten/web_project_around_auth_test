@@ -20,7 +20,8 @@
   font-size: 18px;
   color: #fff;
   position: absolute;
-  top: 30px;
+  position: absolute;
+  top: 60px;
   right: 200px;
 }
 
@@ -31,12 +32,7 @@
   width: 100%;
 }
 
-.register__form-input:first-of-type {
-  margin-bottom: 30px;
-}
-
 .register__form-input {
-  margin-top: 15px;
   padding-bottom: 7px;
   background-color: black;
   font-size: 14px;
@@ -46,7 +42,14 @@
   width: 100%;
   width: 358px;
   height: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
+}
+.register__form-fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  gap: 20px;
+  padding: 0;
 }
 
 .register__form-input:focus {
@@ -54,7 +57,7 @@
 }
 
 .register__button {
-  margin-top: 150px;
+  margin-top: 130px;
   width: 100%;
   padding: 10px 0 10px 0;
   margin-bottom: 15px;
@@ -62,23 +65,7 @@
   height: 50px;
   cursor: pointer;
 }
-.form__error_password {
-  position: relative;
-  bottom: -3px;
-  left: 190px;
-  height: 2px;
-  width: 90%;
-  font-size: 12px;
-  margin-top: 10px;
-}
-.form__error_email {
-  position: relative;
-  bottom: -3px;
-  left: 190px;
-  height: 2px;
-  width: 90%;
-  font-size: 12px;
-}
+
 .register__login {
   margin: 0;
   font-size: 14px;
@@ -95,17 +82,38 @@
   .reister__header {
     width: 700px;
   }
+  .register__header-login {
+    top: 50px;
+    right: 200px;
+  }
 }
 
 @media screen and (max-width: 720px) {
   .register__header {
     width: 500px;
   }
+  .register__header-login {
+    top: 50px;
+    right: 100px;
+  }
 }
-
+@media screen and (max-width: 550px) {
+  .register__header-login {
+    top: 30px;
+    right: 100px;
+  }
+}
 @media screen and (max-width: 500px) {
   .register__header {
     width: 318px;
+  }
+}
+@media screen and (max-width: 458px) {
+  .register__header-login {
+    right: 40px;
+    top: 25px;
+
+    font-size: 14px;
   }
 }
 

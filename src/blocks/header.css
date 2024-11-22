@@ -9,6 +9,24 @@
   margin-top: 4%;
   width: 880px;
 }
+.header__user {
+  display: flex;
+  font-size: 18px;
+  justify-content: space-between;
+  position: relative;
+  top: -23px;
+}
+
+.header__user-close {
+  color: #a9a9a9;
+}
+.header__user-email {
+  font-weight: 400;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  margin-right: 2%;
+}
 
 @media screen and (min-width: 721px) and (max-width: 900px) {
   .header {
@@ -21,6 +39,23 @@
   .header__logo {
     padding-top: 5%;
     padding-left: 6%;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .header__user {
+    display: flex;
+    font-size: 18px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__user-close {
+    color: #a9a9a9;
+  }
+  .header__user-email {
+    position: relative;
+    margin: 0 auto;
   }
 }
 
@@ -41,6 +76,7 @@
 @media screen and (max-width: 700px) {
   .header {
     width: 100%;
+    padding-top: 14%;
   }
   #line {
     margin-top: 4%;

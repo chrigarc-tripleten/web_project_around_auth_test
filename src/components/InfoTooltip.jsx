@@ -5,7 +5,7 @@ import registerError from "../images/notAllowed.png";
 
 export default function InfoToolTip({ open, isRegistered, handleClose }) {
   return (
-    <div className={`popup popup_register ${open ? "popup_opened" : ""}`}>
+    <div className={`popup  ${open ? "popup_opened" : ""}`}>
       <div className="popup__overlay"></div>
 
       <div className="popup__wrapper_register">

@@ -11,33 +11,24 @@
   color: white;
   max-width: 880px;
 }
+.login__form-fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  gap: 20px;
+  padding: 0;
+}
 .login__header-wrapper {
   margin-top: 20px;
   padding-bottom: 0;
 }
-.form__error_password {
-  position: relative;
-  bottom: -3px;
-  left: 190px;
-  height: 2px;
-  width: 90%;
-  font-size: 12px;
-  margin-top: 10px;
-}
-.form__error_email {
-  position: relative;
-  bottom: -3px;
-  left: 190px;
-  height: 2px;
-  width: 90%;
-  font-size: 12px;
-}
+
 .login__header-register {
   font-family: Inter;
   font-size: 18px;
   color: #fff;
   position: absolute;
-  top: 30px;
+  top: 60px;
   right: 200px;
 }
 
@@ -48,12 +39,7 @@
   width: 100%;
 }
 
-.login__form-input:first-of-type {
-  margin-bottom: 30px;
-}
-
 .login__form-input {
-  margin-top: 15px;
   padding-bottom: 7px;
   background-color: black;
   font-size: 14px;
@@ -63,7 +49,7 @@
   width: 100%;
   width: 358px;
   height: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .login__form-item:focus {
@@ -71,7 +57,7 @@
 }
 
 .login__button {
-  margin-top: 150px;
+  margin-top: 130px;
   width: 100%;
   padding: 10px 0 10px 0;
   margin-bottom: 15px;
@@ -102,17 +88,41 @@
   .login__header {
     width: 700px;
   }
+  .login__header-register {
+    top: 50px;
+    right: 200px;
+  }
 }
 
 @media screen and (max-width: 720px) {
   .login__header {
     width: 500px;
   }
+  .login__header-register {
+    top: 50px;
+    right: 100px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .login__header-register {
+    top: 30px;
+    right: 100px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .login__header {
     width: 318px;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .login__header-register {
+    right: 40px;
+    top: 25px;
+
+    font-size: 14px;
   }
 }
 
